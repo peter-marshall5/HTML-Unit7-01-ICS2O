@@ -4,13 +4,16 @@ const playButton = document.getElementById('play')
 function onclick () {
   if(numInput.value == '') {
     alert('You must enter a number into the field.')
+    return
   }
   const num = parseInt(numInput.value)
   if (num < 1 || num > 10) {
     alert('Enter a number from 1 to 10.')
+    return
   }
   if (isNaN(num)) {
     alert('You entered an invalid number')
+    return
   }
   const random = Math.ceil(Math.random() * 10)
   if (random === num) {
