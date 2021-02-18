@@ -2,7 +2,7 @@ const numInput = document.getElementById('num')
 const playButton = document.getElementById('play')
 
 function onclick () {
-  if(numInput.value == '') {
+  if (numInput.value === '') {
     alert('You must enter a number into the field.')
     return
   }
